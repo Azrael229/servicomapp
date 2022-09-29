@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+              <a href="#">
+                <img class="logo" src="img/LogoMakr_4Pdzl8.png" alt="logo" />
+              </a>
+              <ul class="enlaces-menu">
+                <li><a href="http://localhost/Servicom/">Inicio</a></li>
+                <li><a href="#">Cotización</a></li>
+                <li><a href="http://localhost/Servicom/regEmpresa.html">Empresa</a></li>
+                <li><a href="#">Personas</a></li>
+                <li><a href="http://localhost/Servicom/regProd.html">Producto</a></li>
+              </ul>
+            </nav>
+          </header>
+    
+
+        <form id="datosEmpresa" method="POST" >
+            <div class="form">
+                
+                <h2>Registro de nueva empresa</h2>
+                    <div class="grupo">
+                        <label for="Empresa">Empresa</label>
+                        <input type="hidden" name="id" id="idmy" value="">
+                        <input type="text" id="Emp" name="Empresa">
+                    </div>
+                    <div class="grupo">
+                        <label for="Dir">Dirección</label>
+                        <input type="text" id="dir" name="dirEmp">
+                    </div>
+                
+                <button type="submit" id="botonEnviar">Enviar</button>
+                
+            </div>
+        </form>
+        
+
+
+        <table>
+        
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Empresa</th>
+                <th>Dirección</th>
+                <th>Editar</th>
+                <th>Borrar</th>
+                </tr>
+            </thead>
+
+            <tbody id="datosTablaEmp"></tbody>
+            
+        </table>
+
+        <script src="js/codigoEmp.js"></script>
+
+    </body>
+    
+</html>

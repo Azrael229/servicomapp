@@ -1,0 +1,142 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    height: 0;
+    background: linear-gradient(to left, #240b36, #c31432); 
+    background-size: auto;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo{
+    width: 200px;
+    height: 70px;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(29, 29, 29);
+
+}
+.enlaces-menu{
+    display: flex;
+    
+}
+.enlaces-menu li{
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.3s;
+}
+.enlaces-menu li a{
+    
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.enlaces-menu li:hover{
+    background-color:#7c173e;
+
+}
+
+h2{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.555);
+
+}
+form{
+    position: absolute;
+    top: 150px;
+    height: 400px;
+    display: flex;
+    background:rgba(2, 2, 2, 0.226);
+    padding: 25px ;
+    box-shadow: 0 0 6px 0 rgba(7, 7, 7, 0.918) ;
+    border-radius: 10px;
+    width:auto;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+.grupo{ 
+    position: relative;
+    margin: 70px ;
+}
+input{
+    background: none;
+    color: #df6c8f;
+    display: block;
+    border: none;
+    border-bottom: 1px solid;
+    margin:auto;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+    background: none;
+
+}
+label{
+    font-size: 16px;
+    color: #d1cfcf42;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+}
+button{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #c31432; 
+    background: -webkit-linear-gradient(to left, #240b36, #c31432); 
+    background: linear-gradient(to left, #240b36, #c31432); 
+    border: none;
+    box-shadow: 0 0 6px 0 rgba(7, 7, 7, 0.281) ;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+table{
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    position:absolute;
+    width:auto;
+    top: 700px;
+    height: auto;
+    display: inline-block;
+    background:rgba(2, 2, 2, 0.226);
+    box-shadow: 0 0 6px 0 rgba(7, 7, 7, 0.918) ;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px
+    
+}
+
+th{
+    
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 5px
+
+}
+
+td{
+    
+    
+    color: rgba(255, 255, 255, 0.219); 
+    border-bottom: 1px solid;
+    padding: 5px
+    
+}
+
+
