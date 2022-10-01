@@ -26,9 +26,12 @@ $estado = isset($_POST["edoEmp"]) ? $_POST["edoEmp"] : "";
         }else{
             $id = $_POST["id"];
             require ("conexion.php");  
-            $pdo = $conexion->prepare("UPDATE productos SET Nombre = :nombre, Descripcion = :descripcion WHERE ID = :id");
-            $pdo->bindParam(":nombre", $producto);
-            $pdo->bindParam(":descripcion", $descripcion);
+            $pdo = $conexion->prepare("UPDATE empresas SET Nombre = :nombre, Telefono = :telefono, Direccion = :direccion, Ciudad = :ciudad, Estado = :estado WHERE ID = :id");
+            $pdo->bindParam(":nombre", $empresa);
+            $pdo->bindParam(":telefono", $telefono);
+            $pdo->bindParam(":direccion", $direccion);
+            $pdo->bindParam(":ciudad", $ciudad);
+            $pdo->bindParam(":estado", $estado);
             $pdo->bindParam(":id", $id);
             $pdo->execute() or die(print($pdo->errorInfo()));
     
