@@ -2,7 +2,7 @@ var formulario = document.getElementById("datosEmpresa");
 var tabla = document.getElementById("datosTablaEmp");
 
 function crearTabla(){
-    var urlReqListEmp = "http://digitapp.servicombasculas.com.mx/reqListaEmp.php";
+    var urlReqListEmp = "http://digitapp.servicombasculas.com.mx/Empresa/reqListaEmp.php";
 
     fetch(urlReqListEmp)
     .then(res => res.json())
