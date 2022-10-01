@@ -2,7 +2,7 @@ var formulario = document.getElementById("datosProductos");
 var tabla = document.getElementById("datosTabla");
 
 function crearTabla(){
-    var urlReqList = "http://localhost/Servicom/productos/reqLista.php";
+    var urlReqList = "http://digitapp.servicombasculas.com.mx/productos/reqLista.php";
 
     fetch(urlReqList)
     .then(res => res.json())
