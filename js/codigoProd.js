@@ -32,7 +32,7 @@ crearTabla();
 
 formulario.addEventListener("submit", function(e){ 
     e.preventDefault();
-    var urlRegistros = "http://localhost/Servicom/productos/registros.php";  
+    var urlRegistros = "http://digitapp.servicombasculas.com.mx/productos/registros.php";  
     const datos = new FormData(formulario);
     
     fetch(urlRegistros,{
@@ -70,7 +70,7 @@ formulario.addEventListener("submit", function(e){
 
 
 function eliminarReg(ID){
-    var urlElimReg = "http://localhost/Servicom/productos/elimReg.php";
+    var urlElimReg = "http://digitapp.servicombasculas.com.mx/productos/elimReg.php";
     let confirmado = confirm("Eliminar Producto?");
 
     if(confirmado){
@@ -90,7 +90,7 @@ function eliminarReg(ID){
 }
 
 function editarReg(ID){
-    var urlEditarReg = "http://localhost/Servicom/productos/editarReg.php";
+    var urlEditarReg = "http://digitapp.servicombasculas.com.mx/productos/editarReg.php";
     var btnform = document.getElementById("botonEnviar");
         
 
