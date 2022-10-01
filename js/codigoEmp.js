@@ -48,7 +48,7 @@ formulario.addEventListener("submit", function(e){
 
         if(data == "true") {
             console.log(data);
-            alert("Producto Agregado correctamente ¡¡");
+            alert("Empresa Agregada correctamente ¡¡");
             crearTabla();
             formulario.reset();
 
@@ -56,14 +56,14 @@ formulario.addEventListener("submit", function(e){
         if(data == "mod"){
             console.log(data);
             crearTabla();
-            alert("Producto Actualizado correctamente");
+            alert("Datos de Empresa Actualizados correctamente");
             formulario.reset();
             formReset();
         }
         if(data == "false"){
             formulario.reset();
             console.log(data);
-            alert("Agregue un producto");
+            alert("Agregue todos los datos");
         }
         formulario.reset();
 
@@ -73,8 +73,8 @@ formulario.addEventListener("submit", function(e){
 
 
 function eliminarReg(ID){
-    var urlElimReg = "http://localhost/Servicom/productos/elimReg.php";
-    let confirmado = confirm("Eliminar Producto?");
+    var urlElimReg = "http://digitapp.servicombasculas.com.mx/Empresa/elimReg.php";
+    let confirmado = confirm("Eliminar Empresa?");
 
     if(confirmado){
 
