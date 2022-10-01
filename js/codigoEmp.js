@@ -2,7 +2,7 @@ var formulario = document.getElementById("datosEmpresa");
 var tabla = document.getElementById("datosTablaEmp");
 
 function crearTabla(){
-    var urlReqListEmp = "http://localhost/Servicom/Empresa/reqListaEmp.php";
+    var urlReqListEmp = "http://digitapp.servicombasculas.com.mx/reqListaEmp.php";
 
     fetch(urlReqListEmp)
     .then(res => res.json())
@@ -16,7 +16,10 @@ function crearTabla(){
             <tr>
             <td>${item.ID}</td>
             <td>${item.Nombre}</td>
-            <td>${item.Descripcion}</td>
+            <td>${item.Telefono}</td>
+            <td>${item.Direccion}</td>
+            <td>${item.Ciudad}</td>
+            <td>${item.Estado}</td>
             <td><input type="submit" value="editar" onclick=editarReg("${item.ID}")></input></td>
             <td><input type="submit" value="borrar" onclick=eliminarReg("${item.ID}")></input></td>
             </tr>                          
