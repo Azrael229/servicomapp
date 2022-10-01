@@ -112,7 +112,7 @@ table{
     width:auto;
     position:absolute;
     height: auto;
-    display: inline-flex;
+    display: inline-block;
     background:rgba(2, 2, 2, 0.226);
     box-shadow: 0 0 6px 0 rgba(7, 7, 7, 0.918) ;
     color: #fff;
