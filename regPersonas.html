@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empresas</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+              <a href="#">
+                <img class="logo" src="img/LogoMakr_4Pdzl8.png" alt="logo" />
+              </a>
+              <ul class="enlaces-menu">
+                <li><a href="http://digitapp.servicombasculas.com.mx">Inicio</a></li>
+                <li><a href="#">Cotización</a></li>
+                <li><a href="http://digitapp.servicombasculas.com.mx/regEmpresa.html">Empresa</a></li>
+                <li><a href="http://digitapp.servicombasculas.com.mx/regPersonas.html">Personas</a></li>
+                <li><a href="http://digitapp.servicombasculas.com.mx/regProd.html">Producto</a></li>
+              </ul>
+            </nav>
+          </header>
+    
+
+        <form id="datosPersona" method="POST" >
+            <div class="form">
+                
+                <h2>Registro de nuevo contacto</h2>
+                    <div class="grupo">
+                        <label for="nombPersona">Nombre</label>
+                        <input type="hidden" name="id" id="idmy" value="">
+                        <input type="text" id="nombPersona" name="nombPersona">
+                    </div>
+                    <div class="grupo">
+                        
+                        <label for="telPersona">Teléfono</label>
+                        <input type="text" id="telPersona" name="telPersona">
+                    </div>
+                    <div class="grupo">
+                        
+                        <label for="mailPersona">Correo</label>
+                        <input type="text" id="mailPersona" name="mailPersona">
+                    </div>
+                    <div class="grupo">
+                        
+                        <label for="deptoPersona">Departamento</label>
+                        <input type="text" id="deptoPersona" name="deptoPersona">
+                    </div>
+                    <div class="grupo">
+                        
+                        <label for="empPersona">Empresa</label>
+                        <input type="text" id="empPersona" name="empPersona">
+                    </div>
+                
+                <button type="submit" id="botonEnviar">Enviar</button>
+                
+            </div>
+           
+        </form>
+        
+        <table>
+    
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Departamento</th>
+                <th>Estado</th>
+                <th>Empresa</th>
+                <th>Borrar</th>
+                </tr>
+            </thead>
+
+            <tbody id="datosTablaPersona"></tbody>
+            
+        </table>
+        
+
+
+        
+
+        <script src="js/codigoPersona.js"></script>
+
+    </body>
+    
+</html>
