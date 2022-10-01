@@ -93,7 +93,7 @@ function eliminarReg(ID){
 }
 
 function editarReg(ID){
-    var urlEditarReg = "http://localhost/Servicom/productos/editarReg.php";
+    var urlEditarReg = "http://digitapp.servicombasculas.com.mx/Empresa/editarReg.php";
     var btnform = document.getElementById("botonEnviar");
         
 
@@ -105,8 +105,12 @@ function editarReg(ID){
     .then(data => {
          
         idmy.value = data.ID;
-        Prod.value = data.Nombre;
-        descr.value = data.Descripcion;
+        Emp.value = data.Nombre;
+        telEmp.value = data.Telefono;
+        dirEmp.value = data.Direccion;
+        cdEmp.value = data.Ciudad;
+        edoEmp.value = data.Estado;
+
         btnform.innerHTML = "Actualizar";
         console.log(data);
        
@@ -116,8 +120,11 @@ function editarReg(ID){
 
 function formReset(){
     document.getElementById("idmy").value="";
-    document.getElementById("Prod").value="";
-    document.getElementById("descr").value="";
+    document.getElementById("Emp").value="";
+    document.getElementById("telEmp").value="";
+    document.getElementById("dirEmp").value="";
+    document.getElementById("cdEmp").value="";
+    document.getElementById("edoEmp").value="";
     document.getElementById("botonEnviar").innerHTML="Enviar";
 
 }
