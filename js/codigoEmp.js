@@ -35,7 +35,7 @@ crearTabla();
 
 formulario.addEventListener("submit", function(e){ 
     e.preventDefault();
-    var urlRegistros = "http://localhost/Servicom/productos/registros.php";  
+    var urlRegistros = "http://digitapp.servicombasculas.com.mx/Empresa/registrosEmp.php";  
     const datos = new FormData(formulario);
     
     fetch(urlRegistros,{
