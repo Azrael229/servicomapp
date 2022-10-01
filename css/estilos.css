@@ -49,8 +49,7 @@ h2{
 }
 form{
     position: absolute;
-    top: 150px;
-    height: 400px;
+    top: 100px;
     display: flex;
     background:rgba(2, 2, 2, 0.226);
     padding: 25px ;
@@ -109,11 +108,11 @@ button{
 table{
     
     font-family: 'Roboto Condensed', sans-serif;
-    position:absolute;
+    top: 900px;
     width:auto;
-    top: 700px;
+    position:absolute;
     height: auto;
-    display: inline-block;
+    display: flex;
     background:rgba(2, 2, 2, 0.226);
     box-shadow: 0 0 6px 0 rgba(7, 7, 7, 0.918) ;
     color: #fff;
