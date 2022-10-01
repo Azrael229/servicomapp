@@ -1,7 +1,7 @@
 <?php
     
     try{
-        $conexion = new PDO("mysql:host=localhost;port=3306;dbname=servicomdb", "root", "");
+        $conexion = new PDO("mysql:host=localhost; port=3306;dbname=servico1_servicomdb", "root", "");
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
