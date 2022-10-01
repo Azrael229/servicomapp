@@ -4,7 +4,7 @@
 
     $data = file_get_contents("php://input");
 
-    $pdo = $conexion->prepare("SELECT * FROM perosnas WHERE ID = :ID");
+    $pdo = $conexion->prepare("SELECT * FROM personas WHERE ID = :ID");
 
     $pdo->bindParam(":ID", $data);
     $pdo->execute() or die(print($pdo->errorInfo()));
