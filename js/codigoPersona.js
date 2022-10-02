@@ -41,6 +41,7 @@ function opcionesSelect(){
     .then(res => res.json())
     .then(data => {
         let opc = "";
+        console.log(data);
         data.map(item =>{
             opc += `
             <option value="${item.Nombre}">${item.Nombre}</option>
