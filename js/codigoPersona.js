@@ -1,5 +1,6 @@
 var formulario = document.getElementById("datosPersona");
 var tabla = document.getElementById("datosTablaPersona");
+var select = document.getElementById("selEmpPerosna");
 
 function crearTabla(){
     var urlReqListPers = "http://digitapp.servicombasculas.com.mx/personas/reqListaPers.php";
@@ -31,6 +32,24 @@ function crearTabla(){
 }
 
 crearTabla();
+
+function opcionesSelect(){
+    
+    var urlOpcSelect = "http://digitapp.servicombasculas.com.mx/Empresa/crearOpcSelect.php";
+
+    fetch(urlOpcSelect)
+    .then(res => res.json())
+    .then(data => {
+        let opc = "";
+        data.map(item =>{
+            opc += `
+            <option value="${item.Nombre}">${item.Nombre}</option>
+            `
+        });
+        select.innerHTML = opc;
+    });
+
+}
 
 
 formulario.addEventListener("submit", function(e){ 
