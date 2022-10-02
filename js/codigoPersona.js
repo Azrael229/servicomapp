@@ -1,6 +1,6 @@
 var formulario = document.getElementById("datosPersona");
 var tabla = document.getElementById("datosTablaPersona");
-var select = document.getElementById("selEmpPerosna");
+var select = document.getElementById("selEmpPersona");
 
 function crearTabla(){
     var urlReqListPers = "http://digitapp.servicombasculas.com.mx/personas/reqListaPers.php";
