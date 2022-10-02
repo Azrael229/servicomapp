@@ -30,7 +30,7 @@ function crearTabla(){
     });
  
 }
-
+opcionesSelect();
 crearTabla();
 
 function opcionesSelect(){
