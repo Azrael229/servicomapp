@@ -9,7 +9,7 @@ function crearTabla(){
     .then(res => res.json())
     .then(data => {
     
-        //console.log(data);
+        console.log(data);
         let str = "";
            
         data.map(item =>{
@@ -20,7 +20,7 @@ function crearTabla(){
             <td>${item.Telefono}</td>
             <td>${item.Correo}</td>
             <td>${item.Departamento}</td>
-            <td>${item.Empresa_ID}</td>
+            <td>${item.Empresa}</td>
             <td><input type="submit" value="editar" onclick=editarReg("${item.ID}")></input></td>
             <td><input type="submit" value="borrar" onclick=eliminarReg("${item.ID}")></input></td>
             </tr>                          
@@ -148,7 +148,7 @@ function formReset(){
     document.getElementById("telPersona").value="";
     document.getElementById("mailPersona").value="";
     document.getElementById("deptoPersona").value="";
-    document.getElementById("empPersona").value="";
+    document.getElementById("selEmpPersona").value="";
     document.getElementById("botonEnviar").innerHTML="Enviar";
 
 }
