@@ -4,7 +4,7 @@ $nombre = isset($_POST["nombPersona"]) ? $_POST["nombPersona"] : "";
 $telefono = isset($_POST["telPersona"]) ? $_POST["telPersona"] : "";
 $correo = isset($_POST["mailPersona"]) ? $_POST["mailPersona"] : "";
 $departamento = isset($_POST["deptoPersona"]) ? $_POST["deptoPersona"] : "";
-$empresa = isset($_POST["empPersona"]) ? $_POST["empPersona"] : "";
+$empresa = isset($_POST["selEmpPersona"]) ? $_POST["selEmpPersona"] : "";
 
     
     if($nombre =="" || $telefono =="" || $correo =="" || $departamento ==""){
