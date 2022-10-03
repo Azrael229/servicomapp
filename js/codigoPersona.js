@@ -129,7 +129,7 @@ function editarReg(ID){
         telPersona.value = data.Telefono;
         mailPersona.value = data.Correo;
         deptoPersona.value = data.Departamento;
-        empPersona.value = data.Empresa_ID;
+        selEmpPersona.value = data.Empresa_ID;
 
         btnform.innerHTML = "Actualizar";
         console.log(data);

@@ -7,7 +7,7 @@ $departamento = isset($_POST["deptoPersona"]) ? $_POST["deptoPersona"] : "";
 $empresa = isset($_POST["empPersona"]) ? $_POST["empPersona"] : "";
 
     
-    if($empresa =="" || $telefono =="" || $correo =="" || $departamento ==""){
+    if($nombre =="" || $telefono =="" || $correo =="" || $departamento ==""){
         echo json_encode("false");  
 
     }else{
