@@ -70,6 +70,7 @@ formulario.addEventListener("submit", function(e){
             console.log(data);
             alert("Contacto Agregado correctamente ¡¡");
             crearTabla();
+            opcionesSelect();
             formulario.reset();
 
         }                   
@@ -78,10 +79,12 @@ formulario.addEventListener("submit", function(e){
             crearTabla();
             alert("Datos de contacto Actualizados correctamente");
             formulario.reset();
+            opcionesSelect();
             formReset();
         }
         if(data == "false"){
             formulario.reset();
+            opcionesSelect();
             console.log(data);
             alert("Agregue todos los datos");
         }
@@ -105,6 +108,7 @@ function eliminarReg(ID){
         .then(res => res.json())
         .then(data => {
             if(data == "true"){
+                opcionesSelect();
                 crearTabla();
                 //console.log(data);
             }
@@ -123,7 +127,7 @@ function editarReg(ID){
     })
     .then(res => res.json())
     .then(data => {
-         
+        opcionesSelect();
         idmy.value = data.ID;
         nombPersona.value = data.Nombre;
         telPersona.value = data.Telefono;
